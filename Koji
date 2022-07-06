@@ -1,0 +1,1311 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="b726fd3d-e081-472a-b7cf-32bfb9a68048" Name="pandaemoniom savage" Enabled="true">
+    <Folders>
+      <Folder Id="a7f61aab-213e-460e-9df1-2d19bf38f7eb" Name="1" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="Erichthonios readies Warder's Wrath." Id="01dae386-c869-4abd-8bdb-f8d3d3c851c6" RegularExpression="Erichthonios readies Warder's Wrath.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios readies Heavy Hand." Id="e775b13a-832a-4aea-b773-1e4b79258788" RegularExpression="Erichthonios readies Heavy Hand.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios begins casting Aetherial Shackles." Id="5a42b2ae-5148-49a1-a7da-17ac5df3149d" RegularExpression="Erichthonios begins casting Aetherial Shackles.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="shackles" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="Erichthonios readies Gaoler's Flail." Id="6bc65e0d-7880-4483-93a4-bffb23ac15d1" RegularExpression="Erichthonios readies Gaoler's Flail.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="animation" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios readies Pitiless Flail of Grace." Id="2920aa21-8979-42b3-b312-b6b34d147056" RegularExpression="Erichthonios readies Pitiless Flail of Grace.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="knockback and stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios readies Pitiless Flail of Purgation." Id="456505f5-09db-4250-ad0a-0803efc5748e" RegularExpression="Erichthonios readies Pitiless Flail of Purgation.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="knockback and flare" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios readies Shining Cells." Id="7306d443-2a8a-457d-a7c0-1dc4b3226e72" RegularExpression="Erichthonios readies Shining Cells.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="heavy raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Erichthonios readies Slam Shut." Id="263926a9-f871-4b32-b113-7d964ae9ba53" RegularExpression="Erichthonios readies Slam Shut.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="heavy raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="chains fourfold" Id="c0ba2973-e0fb-4d84-85e0-7a94589dc4c2" RegularExpression="^26\|[^|]*\|B(?&lt;debuff&gt;[46][5-9ABC])\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;playerID&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="cardinal 1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="45" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="cardinal 2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="46" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="cardinal 3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="47" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="cardinal 4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="6B" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="5" UseTTSTextExpression="intercardinal 1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="48" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="6" UseTTSTextExpression="intercardinal 2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="49" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="7" UseTTSTextExpression="intercardinal 3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="4A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="8" UseTTSTextExpression="intercardinal 4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${debuff}" ExpressionTypeL="String" ExpressionR="6C" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+            </Condition>
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Flails" Id="01c0a298-3e35-4dd7-93fc-dc74ce410904" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|65F(?&lt;hit&gt;[6789AB])\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="left then right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="6" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="right then left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="7" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="3" UseTTSTextExpression="out then in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="8" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="9" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="4" UseTTSTextExpression="in then out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="A" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${hit}" ExpressionTypeL="String" ExpressionR="B" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="ab61e9bd-a655-4051-894a-6f607ae575b2" Name="2" Enabled="true">
+        <Folders>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1005$" Id="8fe5ebcc-df92-4e38-ba1b-dde20291a139" Name="HeadMarker" Enabled="false">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="LimitCut" Id="ecc9de13-ca95-4f46-b3cb-837e02b90f7e" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|" MutexToCapture="HeadMarker">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="offset" VariableExpression="hex2dec(${ID})-259" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:offset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetString" VariableName="HeadMarkerValue" VariableExpression="${func:dec2hex:${numeric:(hex2dec(${ID})-${var:offset})}}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" UseTTSTextExpression="opposite from boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="91" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" UseTTSTextExpression="stay at boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="92" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" UseTTSTextExpression="opposite from boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="93" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="6" UseTTSTextExpression="stay at boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="94" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="7" UseTTSTextExpression="1 marker" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="95" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="8" UseTTSTextExpression="2 marker" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="96" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="9" UseTTSTextExpression="3 marker" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="97" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="10" UseTTSTextExpression="4 marker" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="98" ExpressionTypeL="String" ExpressionR="${var:HeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="LimitCutReset" Id="34d26f38-5cdd-41bf-884a-1f76effa33b9" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                <Actions>
+                  <Action OrderNumber="1" VariableName="offset" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableName="HeadMarkerValue" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1005$" Id="3b50ea52-215d-432c-a711-af776059bf4d" Name="Savage" Enabled="false">
+            <Folders>
+              <Folder Id="ff3befbd-fff2-4264-805d-18e62d7190cb" Name="P2S (from @King Pendragon)" Enabled="false">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Murky Depths" Id="bfb74488-a8f4-4114-90dd-6a8521819af3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6833\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Doubled Impact" Id="aad3e7ee-5f14-4133-a234-781c044633d6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6832\|[^|]*\|[^|]*\|(?&lt;name&gt;[a-zA-Z-' 0-9]{1,31})\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Tank Buster on ${name}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Sewage Deluge" Id="38d2b4bb-04bf-4539-b994-436753ae4967" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6810\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Heavy aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Spoken Cataract" Id="fc149bdc-c61d-4e31-90ae-78f6e64f75c6" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6817\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Cleave in front of Head. " TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Winged Cataract" Id="9e1720cd-71ad-4a1f-a62e-448e2db0801f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6818\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Cleave Behind Head." TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Coherence" Id="239d2ded-b68d-4e60-b7a3-8ffdd532a096" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|681B\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Tank Tether Away, Party Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Ominous Bubbling" Id="037c7a27-883e-4b75-9e05-35fd43c3f2c5" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|682A\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Healer Stacks soon" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Shockwave" Id="469226d8-e487-447c-be79-e30b10d9261b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|682F\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Knock Back." TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mark of the Tides" Id="3b383457-3d94-4a79-bc92-5794d12e4d8d" RegularExpression="^26\|[^|]*\|AD0\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[a-zA-Z-' 0-9]{1,31})\|" MutexToCapture="MarkOfTides">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Knock Back On You" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Mark of Depths" Id="3d365808-ba1b-41a1-8c95-e4ab4f0afa76" RegularExpression="^26\|[^|]*\|AD1\|[^|]*\|[^|]*\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[a-zA-Z-' 0-9]{1,31})\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Stack On You" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Water Slide " Id="bda76716-0978-4b29-a4dd-182e663c66a9" RegularExpression="^26\|[^|]*\|(?&lt;side&gt;AD[2-5])\|[^|]*\|([^|]*)\|[^|]*\|\|[^|]*\|(?&lt;name&gt;[a-zA-Z-' 0-9]{1,31})\|">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Slide north" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="AD2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="Slide South" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="AD3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="Slide west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="AD4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="Slide east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${side}" ExpressionTypeL="String" ExpressionR="AD5" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder FfxivZoneFilterRegularExpression="3ED" Id="46e344d7-a60d-4a51-99de-825e409046b6" Name="HeadMarker" Enabled="false">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="LimitCut" Id="df04b3b8-298d-499c-8792-1d1e8249c28b" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|" MutexToCapture="P2SHeadMarkers">
+                    <Actions>
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P2SHeadMArkOffset" VariableExpression="hex2dec(${ID})-hex2dec(0103)" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:P2SHeadMArkOffset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="P2SHeadMarkerValue" VariableExpression="(hex2dec(${ID})-${var:P2SHeadMArkOffset})-144" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="Blue ${var:P2SHeadMarkerValue} : tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:P2SHeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:P2SHeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="4" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="Purple ${numeric:${var:P2SHeadMarkerValue}-4} : sides" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" Asynchronous="False">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:P2SHeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="5" ExpressionTypeR="Numeric" ConditionType="NumericGreaterEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:P2SHeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="8" ExpressionTypeR="Numeric" ConditionType="NumericLessEqual" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="LimitCutReset" Id="e4126e2e-fa82-4a82-ba53-15422803c368" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                    <Actions>
+                      <Action OrderNumber="1" VariableName="P2SHeadMArkOffset" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" VariableName="P2SHeadMarkerValue" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="The hippokampos begins casting Murky Depths." Id="267d19af-c57a-4959-9900-b7c0fb935a4c" RegularExpression="The hippokampos begins casting Murky Depths.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Doubled Impact." Id="6a9950e3-cb57-4cc7-9d17-2fedb96623e6" RegularExpression="The hippokampos readies Doubled Impact.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="double tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Winged Cataract." Id="bae031ec-2c55-4354-aaee-54f77540a456" RegularExpression="The hippokampos readies Winged Cataract.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="go to red" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Sewage Deluge" Id="fef48223-da63-4e92-947a-a643e920ef0c" RegularExpression="The hippokampos readies Sewage Deluge">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Spoken Cataract." Id="d806c259-a097-471c-80e3-8e0f48718acf" RegularExpression="The hippokampos readies Spoken Cataract.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="away from red" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos begins casting Channeling Overflow." Id="011951a1-a9da-4368-8d31-238eb8351d70" RegularExpression="The hippokampos begins casting Channeling Overflow.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="arrow markers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos begins casting Channeling Flow." Id="08332fb1-79f4-4b9a-94ae-1ca2dd2099d1" RegularExpression="The hippokampos begins casting Channeling Flow.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="arrows" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Shockwave." Id="4b28fc8a-7351-4990-807f-a95f0c37ddd8" RegularExpression="The hippokampos readies Shockwave.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="boss jump and knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos readies Coherence." Id="98e0f2c6-58a1-48cd-aa34-b0e01dd942e4" RegularExpression="The hippokampos readies Coherence.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="tank tether and group stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos begins casting Predatory Avarice." Id="16db6c14-56f4-453d-8975-f7c33a5dfb15" RegularExpression="The hippokampos begins casting Predatory Avarice.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="watch debuff" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The hippokampos begins casting Sewage Eruption." Id="4678c7fa-5022-42fc-9d78-6114da6911a7" RegularExpression="The hippokampos begins casting Sewage Eruption.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="stack up and run" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Dissociation" Id="50262bc8-a74e-4d89-aa19-5b61de5f66a3" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6806\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;xpos&gt;[^|]*)\|">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="go east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${xpos}" ExpressionTypeL="String" ExpressionR="90.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="go west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${xpos}" ExpressionTypeL="String" ExpressionR="110.00" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="376b4b69-bdc0-473d-92c3-24918ed1f75a" Name="3" Enabled="true">
+        <Folders>
+          <Folder Id="55e66535-ab76-4e8f-8a1e-bf710549d27f" Name="Savage" Enabled="true">
+            <Folders>
+              <Folder Id="ab0365b4-0c81-4d25-aa21-a9b808058d72" Name="P3S (from @Orb)" Enabled="true">
+                <Folders>
+                  <Folder Id="b433b2b2-5da5-4970-8d96-fcdf1a641777" Name="Experimental Fireplume" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="Shiva" Id="7090faf7-9c29-471c-9694-aa59f0dc0275" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C0">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="center and Shiva" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Out" Id="db1377d0-ee5a-49d5-88a8-4ee8929cd2e8" RegularExpression="14:[0-9A-F]{8}:[^:]*:66BE">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="center and Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="9e1f62bb-d99f-4140-a8f9-fed69b52f2b2" Name="Experimental Gloryplume" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="Shiva" Id="d81abd0b-f7e9-4a73-9410-0742b2edfacb" RegularExpression="14:[0-9A-F]{8}:[^:]*:66CA">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="center and Shiva" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Out" Id="4d369483-fa38-4561-b9b6-036c0b357e59" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C6">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="center and Out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Light parties" Id="aeafb75b-b9d4-4ab4-b6fb-ca193105cad3" RegularExpression="15:[0-9A-F]{8}:[^:]*:66CC">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Light parties" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Spread" Id="16fcac12-a659-4df3-b668-fc0544c91f06" RegularExpression="15:[0-9A-F]{8}:[^:]*:66C8">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="3438a968-2f5f-49c2-a590-91db8e23aa8a" Name="Experimental Ashplume" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Name="Spread" Id="c938cd81-6cd1-428c-8274-895919ccec34" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C4">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Name="Light parties" Id="285ef05e-26a1-4a4e-b031-6f8f5a8ff00a" RegularExpression="14:[0-9A-F]{8}:[^:]*:66C2">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Light parties" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers>
+                  <Trigger Enabled="true" Name="Tank Tethers" Id="dadedf3c-b35f-47cd-8de5-df9e310ab73f" RegularExpression="14:[0-9A-F]{8}:[^:]*:6700:">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Tank tethers" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Name="Middle and pairs" Id="b3ef1e29-7d0e-4eca-8d59-ed1cebe3bfb1" RegularExpression="14:[0-9A-F]{8}:[^:]*:66FC:">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Middle and pairs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Name="Sides and Spread" Id="c8e3c0f7-c79c-45be-9f2b-72bdb5d067e2" RegularExpression="14:[0-9A-F]{8}:[^:]*:66FB:">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Sides and Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Name="Go left" Id="5329905f-2f40-4587-99d3-d2e5555a5c3a" RegularExpression="14:[0-9A-F]{8}:[^:]*:6702:">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="GO left" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Name="Right" Id="70fd74ca-b8f3-404c-b529-efd6648c66c9" RegularExpression="14:[0-9A-F]{8}:[^:]*:6703:">
+                    <Actions>
+                      <Action OrderNumber="1" UseTTSTextExpression="Go Right" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder Id="6693416b-c60b-4272-94c0-4da19610525e" Name="P3S LimitCut (from @King Pendragon)" Enabled="false">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="HeadMarker" Id="9f1c0cce-54e1-4712-9606-790a09f18e58" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|" MutexToCapture="Counter">
+                    <Actions>
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="offset" VariableExpression="hex2dec(${ID})" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${evar:offset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="HeadMarkerValue" VariableExpression="(hex2dec(${ID})+1)-${var:offset}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="${var:HeadMarkerValue}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:HeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                          <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                          <ConditionSingle Enabled="true" ExpressionL="${var:HeadMarkerValue}" ExpressionTypeL="Numeric" ExpressionR="9" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="HeadCounterReset" Id="a08f438d-38cf-4899-9c25-802e23116864" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                    <Actions>
+                      <Action OrderNumber="1" ListVariableName="HeadCounterName" VariableName="HeadMarkerValue" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" VariableName="offset" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1007$" Id="b4e3329d-2dc4-4dbe-a634-60d89572fa7c" Name="P3S LimitCut" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="HeadCounterReset" Id="1811663c-05a8-4ca3-875a-1ee6e43535d8" RegularExpression="^33\|[^|]*\|[^|]*\|400000(?&gt;03|10)\|">
+                <Actions>
+                  <Action OrderNumber="1" ListVariableName="HeadCounterName" VariableName="P3SHeadMarkerValue" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" VariableName="P3Soffset" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Sequential="True" Name="HeadMarker" Id="354b401d-0c39-4684-8f5a-6eac586e5e9e" RegularExpression="^27\|[^|]*\|[^|]*\|(?&lt;name&gt;[^|]*)\|[^|]*\|[^|]*\|(?&lt;ID&gt;[0-9A-F]{4})\|" MutexToCapture="HeadMarker">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="P3Soffset" VariableExpression="hex2dec(${ID})-79" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${evar:P3Soffset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" VariableOp="SetString" VariableName="P3SHeadMarkerValue" VariableExpression="${func:dec2hex:${numeric:(hex2dec(${ID})-${var:P3Soffset})}}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" UseTTSTextExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="4F" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" UseTTSTextExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="50" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" UseTTSTextExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="51" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="6" UseTTSTextExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="52" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="7" UseTTSTextExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="53" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="8" UseTTSTextExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="54" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="9" UseTTSTextExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="55" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="10" UseTTSTextExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="56" ExpressionTypeL="String" ExpressionR="${var:P3SHeadMarkerValue}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="39b19e49-7c40-49aa-92c7-44507e06a1e9" Name="act kaputt" Enabled="false">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="The phoinix readies Experimental Fireplume." Id="03708752-4c68-4b00-8bc4-f837eb0e6e34" RegularExpression="The phoinix readies Experimental Fireplume.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="animation, go center" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="The phoinix readies Experimental Gloryplume." Id="2d38b76f-f927-4086-9cb1-a29aa521db61" RegularExpression="The phoinix readies Experimental Gloryplume.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="go center" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="The phoinix readies Heat of Condemnation." Id="8ade468f-e15c-440b-bed5-64209cab1d24" RegularExpression="The phoinix readies Heat of Condemnation.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="tank tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="The phoinix readies Left Cinderwing." Id="4f0c4134-4d95-48e2-862a-852db3d6f492" RegularExpression="The phoinix readies Left Cinderwing.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="right safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="The phoinix readies Right Cinderwing." Id="aa715513-b20b-41d5-bfad-a93fc102cb9d" RegularExpression="The phoinix readies Right Cinderwing.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="left safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="The phoinix readies Scorched Exaltation." Id="4c1ffdff-e584-4082-bf1e-e71a099dc694" RegularExpression="The phoinix readies Scorched Exaltation.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The phoinix readies Darkened Fire." Id="0270e693-32cc-4da5-ad40-7f7bebebc20d" RegularExpression="The phoinix readies Darkened Fire.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="dark fire position" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The phoinix readies Devouring Brand." Id="3766b434-f540-49ac-b54a-62ff76f32486" RegularExpression="The phoinix readies Devouring Brand.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="cardinal fire" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The phoinix readies Life's Agonies." Id="485348dc-f59f-4667-aecb-34c0b5d66169" RegularExpression="The phoinix readies Life's Agonies.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="heavy raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="b5aa8673-1ac7-442a-9fa9-0d3f9b3e160d" Name="4" Enabled="true">
+        <Folders>
+          <Folder Id="6611918d-1a65-47d6-84d9-8a796c16f91c" Name="p2" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="Hesperos readies Searing Stream." Id="a053a726-079c-4ba1-8315-7acf700f67f0" RegularExpression="Hesperos readies Searing Stream.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Hesperos readies Demigod Double." Id="8ad100e7-3bef-4157-865f-2936ec33defe" RegularExpression="Hesperos readies Demigod Double.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Hesperos readies Nearsight." Id="5f593fd6-622b-4136-9fd4-5bd5852369f1" RegularExpression="Hesperos readies Nearsight.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Hesperos readies Farsight." Id="d76ac03d-bd2e-4e89-a65c-ba1f56c149f1" RegularExpression="Hesperos readies Farsight.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Hesperos readies Heart Stake." Id="76d81b1c-d83b-4d5d-8246-c605d5c4e589" RegularExpression="Hesperos readies Heart Stake.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="tanks bleeding" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="Hesperos readies Ultimate Impulse." Id="5e236a05-79ad-4255-8e22-89ef910dbda2" RegularExpression="Hesperos readies Ultimate Impulse.">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="614200a4-401d-4cac-a506-b20ff6f8dd17" Name="P4s (From @aya)" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Cleave" Id="9fadf8c1-00d8-425e-912c-bb7070e2c9aa" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|6A06">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="Cleave" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="700">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback" Id="1f97c2e4-47f3-476e-b11d-118a226ae43f" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|6A01">
+                <Actions>
+                  <Action OrderNumber="1" UseTTSTextExpression="Knockback" UseTTSVolumeExpression="700" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="700">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1009$" Id="047e3a67-143e-4305-8fb8-55e7afa0e405" Name="P4S" Enabled="true">
+            <Folders>
+              <Folder FfxivZoneFilterRegularExpression="^1009$" Id="8d80c528-3f3c-43d7-b568-511ccaa7ad76" ZoneFilterRegularExpression="^Asphodelos:\ The\ Fourth\ Circle\ \(Savage\)$" Name="P2" Enabled="true">
+                <Folders />
+                <Triggers>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Akanthai: Curtain Call phase check" Id="d1e8f1ad-907d-43ee-9628-d48eb353431c" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A36">
+                    <Actions>
+                      <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="CurtainCall" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                  <Trigger Enabled="false" Source="FFXIVNetwork" Name="Break Tether 12s TTS" Id="c37320f2-271f-4b35-8fff-68c07a9a68ea" RegularExpression="^26\|[^|]*\|AF4\|[^|]*\|(?&lt;P4S2debuffduration&gt;[^.]*)[^|]*\|[^|]*\|\|[^|]*\|(?&lt;P4S2debufftarget&gt;[^|]*)">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="72" TextAuraName="P2S2debuffduration" TextAuraExpression="${numeric:${P4S2debuffduration}-${_since}}" TextAuraXIniExpression="1108" TextAuraYIniExpression="75" TextAuraWIniExpression="299" TextAuraHIniExpression="183" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${P4S2debuffduration}-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="12" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="22" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="32" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="5" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="42" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${P4S2debufftarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:CurtainCall}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Break Tether 7s TTS" Id="1d70fa98-6607-4762-8403-65fecf96e1e1" RegularExpression="^26\|[^|]*\|AF4\|[^|]*\|(?&lt;P4S2debuffduration&gt;[^.]*)[^|]*\|[^|]*\|\|[^|]*\|(?&lt;P4S2debufftarget&gt;[^|]*)">
+                    <Actions>
+                      <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="72" TextAuraName="P2S2debuffduration" TextAuraExpression="${numeric:${P4S2debuffduration}-${_since}}" TextAuraXIniExpression="1125" TextAuraYIniExpression="116" TextAuraWIniExpression="299" TextAuraHIniExpression="183" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${P4S2debuffduration}-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                      <Action OrderNumber="2" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="4000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="12" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="3" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="22" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="4" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="32" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                      <Action OrderNumber="5" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="42" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${P4S2debufftarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="${var:CurtainCall}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Trigger>
+                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Curtain Call Reset" Id="c546d0f6-967f-4712-ae28-31413854a444" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A0C">
+                    <Actions>
+                      <Action OrderNumber="1" VariableOp="UnsetRegex" VariableName="CurtainCall" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Action>
+                    </Actions>
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Trigger>
+                </Triggers>
+              </Folder>
+              <Folder FfxivZoneFilterRegularExpression="^1009$" Id="3d51bd96-a31d-48aa-840f-e2839e5ad1a7" ZoneFilterRegularExpression="^Asphodelos:\ The\ Fourth\ Circle\ \(Savage\)$" Name="P1" Enabled="true">
+                <Folders>
+                  <Folder Id="153c21fe-177e-42bb-8737-c03c020cb034" Name="Towers" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support Tower" Id="c2dd7b15-2976-40db-9da1-c6a3c2727cf6" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69DF\|" RefirePeriodExpression="1">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="recentTower" VariableExpression="Support" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS Tower" Id="79e388d9-8a33-40b1-9bc7-e8a737c580ae" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69DE\|" RefirePeriodExpression="1">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="recentTower" VariableExpression="DPS" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="wipe" Id="1b31514f-ecc4-473f-bc53-95249f2aafc5" RegularExpression="^33\|[^|]*\|[^|]*\|400000(03|10)">
+                        <Actions>
+                          <Action OrderNumber="1" VariableName="storedTower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="2" VariableName="recentTower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                          <Action OrderNumber="3" VariableName="TowerPhase" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stored Tower" Id="3e31c508-f661-4fa0-9e2a-958f0488d4f2" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69EC\|" RefirePeriodExpression="1">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="storedTower" VariableExpression="${var:recentTower}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tower Resolution" Id="14151826-37ab-4b3c-9bbb-dd50ce2a64bb" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69E6\|" RefirePeriodExpression="1">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Get Debuff and get Tether, both" UseTTSRateExpression="" VariableOp="SetString" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="Don't get Debuff or Tether, nothing" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" UseTTSTextExpression="Get only Debuff" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="4" UseTTSTextExpression="Get only Tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                              <ConditionGroup Enabled="true" Grouping="And">
+                                <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                                <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                              </ConditionGroup>
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="5" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="#FF8040" TextAuraOutline="#FF8000" TextAuraName="Towers" TextAuraExpression="1. stored ${var:storedTower} (no Tether)&#xD;&#xA;2. recent ${var:recentTower} (no Debuff)" TextAuraXIniExpression="1780" TextAuraYIniExpression="793" TextAuraWIniExpression="766" TextAuraHIniExpression="226" TextAuraOIniExpression="100" TextAuraTTLTickExpression="15-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:TowerPhase}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tower Phase" Id="43ab83da-6299-4c31-be0c-cb5f8a54a494" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69F4\|" RefirePeriodExpression="1">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="TowerPhase" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                  <Folder Id="7cb2195d-3b0a-44ea-bbec-f3366c70c080" Name="Rot / Tether" Enabled="true">
+                    <Folders />
+                    <Triggers>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS role debuffs" Id="cebf8ef0-14ab-46f8-8e2c-5f3e7f0a8a4c" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69E6\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:recentRake}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="Don't get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:recentRake}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS tethers" Id="6cfc34c1-a3aa-4a5b-bd1e-c003a924c108" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69ED\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:storedRole}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="Don't get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:storedRole}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="rakeFinished" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="most recently raked role" Id="b4f9a6cd-d8c2-47b4-966d-86ec449bc0f2" RegularExpression="^2[12]\|[^\|]*\|[^\|]*\|[^\|]*\|69D8\|[^\|]*\|[^\|]*\|(?&lt;name&gt;[^\|]*)\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="recentRake" VariableExpression="${_ffxivparty[${name}].role}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="stored role" Id="eee80395-b659-4f0c-82f6-f00124059069" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69EC\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" VariableOp="SetString" VariableName="storedRole" VariableExpression="${var:recentRake}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="Or">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support role debuffs" Id="377afd2d-a67e-4788-b68a-f23c456756cc" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69E6\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:recentRake}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="Don't get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:recentRake}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                            </Condition>
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support tethers" Id="82877c25-1563-485f-9fcc-1bb8e8724942" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69ED\|" RefirePeriodExpression="2">
+                        <Actions>
+                          <Action OrderNumber="1" UseTTSTextExpression="Get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:storedRole}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="2" UseTTSTextExpression="Don't get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                            <Condition Enabled="true" Grouping="Or">
+                              <ConditionSingle Enabled="true" ExpressionL="${var:storedRole}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                            </Condition>
+                          </Action>
+                          <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="rakeFinished" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="true" Grouping="And">
+                          <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+                          <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+                        </Condition>
+                      </Trigger>
+                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="wipe" Id="83f20e4e-3264-498c-b086-b0710e3aaf74" RegularExpression="^33\|[^|]*\|[^|]*\|400000(03|10)">
+                        <Actions>
+                          <Action OrderNumber="1" VariableName="rakeFinished" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                            <Condition Enabled="false" Grouping="Or" />
+                          </Action>
+                        </Actions>
+                        <Condition Enabled="false" Grouping="Or" />
+                      </Trigger>
+                    </Triggers>
+                  </Folder>
+                </Folders>
+                <Triggers />
+              </Folder>
+            </Folders>
+            <Triggers />
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="Hesperos readies Decollation." Id="cd9d37c1-9a3f-40a7-8d60-495693a1cd34" RegularExpression="Hesperos readies Decollation.">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="Hesperos readies Director's Belone." Id="68bc3d0a-5891-4ed9-b410-6fa82e77ab8f" RegularExpression="Hesperos readies Director's Belone.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="watch debuffs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Elegant Evisceration." Id="0227e710-5358-4b8a-ae5f-e414cf132fd9" RegularExpression="Hesperos readies Elegant Evisceration.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Bloodrake." Id="a3a180d9-58a1-46e0-b54e-731b36b5ec58" RegularExpression="Hesperos readies Bloodrake.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="boss tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Pinax." Id="f0d66007-816c-41a8-9945-6a6583a40b35" RegularExpression="Hesperos readies Pinax.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="watch mechanics" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Easterly Shift." Id="0e1cdcda-9784-4120-b6c9-d5ce49b50225" RegularExpression="Hesperos readies Easterly Shift.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Southerly Shift." Id="d3bf303d-07af-44c7-9e33-0981d5888b3c" RegularExpression="Hesperos readies Southerly Shift.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="south" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="false" Name="Hesperos readies Belone Bursts." Id="b51028d1-42b2-4980-a6f3-485b2535a72c" RegularExpression="Hesperos readies Belone Bursts.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="watch debuffs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Northerly Shift." Id="49c4e14b-925d-4d62-8502-a968062e3854" RegularExpression="Hesperos readies Northerly Shift.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="north" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Hesperos readies Westerly Shift." Id="7f44a498-f72e-4d22-a6fc-ddbb5d8e7634" RegularExpression="Hesperos readies Westerly Shift.">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers />
+  </ExportedFolder>
+</TriggernometryExport>
