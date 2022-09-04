@@ -232,7 +232,7 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="TTS" Id="4e505547-9273-4929-8481-d776e4de526c" RegularExpression="^27\|[^\|]*\|[^\|]*\|(?&lt;name&gt;[^\|]*)\|[^\|]*\|[^\|]*\|(?&lt;ID&gt;[^\|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Dynamo" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0358" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0360" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
