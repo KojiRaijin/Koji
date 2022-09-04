@@ -1,512 +1,431 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="db2d3a06-4f84-44c3-8596-968bbc5b5f1d" Name="Static" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage" Enabled="true">
     <Folders>
-      <Folder Id="f9004c17-fa4f-4903-9aac-9aeba6b135da" Name="Pandaemonium Savage" Enabled="true">
+      <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
-          <Folder Id="6180228b-fe6d-435a-836d-784c5c5a8ebe" Name="P4S" Enabled="true">
-            <Folders>
-              <Folder Id="432409d6-2a40-43b4-8958-39bb84e928ba" Name="p2" Enabled="true">
-                <Folders />
-                <Triggers>
-                  <Trigger Enabled="true" Name="Hesperos readies Searing Stream." Id="cdd191f7-e020-4f58-82dc-2902b4ebbfcb" RegularExpression="Hesperos readies Searing Stream.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Hesperos readies Demigod Double." Id="4fb547c4-c55b-4f54-9e49-95e8d6cc057c" RegularExpression="Hesperos readies Demigod Double.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Hesperos readies Nearsight." Id="7a077135-3fe5-4323-b466-ca3543323e2a" RegularExpression="Hesperos readies Nearsight.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="go in" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Hesperos readies Farsight." Id="0b1ae36f-322a-4d1d-b17a-18bc3fc525ab" RegularExpression="Hesperos readies Farsight.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="go out" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Hesperos readies Heart Stake." Id="6b66ffa9-5c17-4f43-b8ce-6c9c6c913d99" RegularExpression="Hesperos readies Heart Stake.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="tanks bleeding" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Name="Hesperos readies Ultimate Impulse." Id="f17466d9-dc42-46f9-8080-879493d8ff8a" RegularExpression="Hesperos readies Ultimate Impulse.">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                </Triggers>
-              </Folder>
-              <Folder Id="823dfda2-c430-4d31-b172-e44b84588367" Name="P4s (From @aya)" Enabled="true">
-                <Folders />
-                <Triggers>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Cleave" Id="a0a7968f-9b57-411b-b22c-5172155632c8" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|6A06">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Cleave" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="700">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                  <Trigger Enabled="true" Source="FFXIVNetwork" Name="Knockback" Id="f0db158f-715f-46a4-84ae-fbffea92724c" RegularExpression="^20\|[^\|]*\|[^\|]*\|[^\|]*\|6A01">
-                    <Actions>
-                      <Action OrderNumber="1" UseTTSTextExpression="Knockback" UseTTSVolumeExpression="700" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="700">
-                        <Condition Enabled="false" Grouping="Or" />
-                      </Action>
-                    </Actions>
-                    <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
-                  </Trigger>
-                </Triggers>
-              </Folder>
-              <Folder FFXIVZoneFilterEnabled="True" FfxivZoneFilterRegularExpression="^1009$" Id="5193b921-928f-46d1-9fa7-90398e11da75" Name="P4S (HIER ÄNDERN)" Enabled="true">
-                <Folders>
-                  <Folder FfxivZoneFilterRegularExpression="^1009$" Id="9b927427-f4a1-4b9c-b0e2-89a5cf74cb53" ZoneFilterRegularExpression="^Asphodelos:\ The\ Fourth\ Circle\ \(Savage\)$" Name="P2 (HIER ÄNDERN)" Enabled="true">
-                    <Folders />
-                    <Triggers>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Akanthai: Curtain Call phase check" Id="2bbacb06-1333-4f70-b4fe-e4b2d395ef80" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A36">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="CurtainCall" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="DPS" Id="02464350-2071-432b-b5a7-291487e2a2d9" RegularExpression="^26\|[^|]*\|AF4\|[^|]*\|(?&lt;P4S2debuffduration&gt;[^.]*)[^|]*\|[^|]*\|\|[^|]*\|(?&lt;P4S2debufftarget&gt;[^|]*)">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="72" TextAuraName="P2S2debuffduration" TextAuraExpression="${numeric:${P4S2debuffduration}-${_since}}" TextAuraXIniExpression="1108" TextAuraYIniExpression="75" TextAuraWIniExpression="299" TextAuraHIniExpression="183" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${P4S2debuffduration}-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="12" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="22" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="4" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="32" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="5" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="42" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debufftarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                          <ConditionSingle Enabled="true" ExpressionL="${var:CurtainCall}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                        </Condition>
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="false" Source="FFXIVNetwork" Name="Tank/Healer" Id="2aca249f-6db7-4171-a892-3ff9d6023f87" RegularExpression="^26\|[^|]*\|AF4\|[^|]*\|(?&lt;P4S2debuffduration&gt;[^.]*)[^|]*\|[^|]*\|\|[^|]*\|(?&lt;P4S2debufftarget&gt;[^|]*)">
-                        <Actions>
-                          <Action OrderNumber="1" TextAuraEffect="Bold" TextAuraFontSize="72" TextAuraName="P2S2debuffduration" TextAuraExpression="${numeric:${P4S2debuffduration}-${_since}}" TextAuraXIniExpression="1125" TextAuraYIniExpression="116" TextAuraWIniExpression="299" TextAuraHIniExpression="183" TextAuraOIniExpression="100" TextAuraTTLTickExpression="${P4S2debuffduration}-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                          <Action OrderNumber="2" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="4000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="12" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="3" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="22" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="4" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="32" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                          <Action OrderNumber="5" UseTTSTextExpression="Break tether" UseTTSRateExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="10000">
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${P4S2debuffduration}" ExpressionTypeL="Numeric" ExpressionR="42" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="true" Grouping="And">
-                          <ConditionSingle Enabled="true" ExpressionL="${P4S2debufftarget}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                          <ConditionSingle Enabled="true" ExpressionL="${var:CurtainCall}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                        </Condition>
-                        <Conditions />
-                      </Trigger>
-                      <Trigger Enabled="true" Source="FFXIVNetwork" Name="Curtain Call Reset" Id="47a933db-5d7b-4bdb-ad74-9a6cc169296a" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|6A0C">
-                        <Actions>
-                          <Action OrderNumber="1" VariableOp="UnsetRegex" VariableName="CurtainCall" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                            <Condition Enabled="false" Grouping="Or" />
-                          </Action>
-                        </Actions>
-                        <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
-                      </Trigger>
-                    </Triggers>
-                  </Folder>
-                  <Folder FfxivZoneFilterRegularExpression="^1009$" Id="224dbdf6-c1b2-4496-a38f-74ee064accd6" ZoneFilterRegularExpression="^Asphodelos:\ The\ Fourth\ Circle\ \(Savage\)$" Name="P1" Enabled="true">
-                    <Folders>
-                      <Folder Id="3067a91a-9858-4153-a525-b16a1860459d" Name="Towers" Enabled="true">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support Tower" Id="317f97d2-5b40-420a-b020-b42520f4e04b" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69DF\|" RefirePeriodExpression="1">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="recentTower" VariableExpression="Support" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS Tower" Id="e6f34301-24ff-4eaf-b0aa-101d1c5d0ba4" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69DE\|" RefirePeriodExpression="1">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="recentTower" VariableExpression="DPS" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="wipe" Id="6ae42a2b-4784-4179-8b69-b20db4c33542" RegularExpression="^33\|[^|]*\|[^|]*\|400000(03|10)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableName="storedTower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="2" VariableName="recentTower" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                              <Action OrderNumber="3" VariableName="TowerPhase" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Stored Tower" Id="1612a96e-07df-47cc-a767-219b568ee61c" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69EC\|" RefirePeriodExpression="1">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="storedTower" VariableExpression="${var:recentTower}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tower Resolution" Id="b1eddf91-7e4b-49f8-bf1e-2cc934e20f45" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69E6\|" RefirePeriodExpression="1">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Get Debuff and get Tether, both" UseTTSRateExpression="" VariableOp="SetString" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" UseTTSTextExpression="Don't get Debuff or Tether, nothing" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="3" UseTTSTextExpression="Get only Debuff" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="4" UseTTSTextExpression="Get only Tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="200">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                  <ConditionGroup Enabled="true" Grouping="And">
-                                    <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:recentTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                    <ConditionSingle Enabled="true" ExpressionL="${var:storedTower}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                  </ConditionGroup>
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="5" TextAuraEffect="Bold" TextAuraFontSize="36" TextAuraForeground="#FF8040" TextAuraOutline="#FF8000" TextAuraName="Towers" TextAuraExpression="1. stored ${var:storedTower} (no Tether)&#xD;&#xA;2. recent ${var:recentTower} (no Debuff)" TextAuraXIniExpression="1780" TextAuraYIniExpression="793" TextAuraWIniExpression="766" TextAuraHIniExpression="226" TextAuraOIniExpression="100" TextAuraTTLTickExpression="15-${_since}" TextAuraFontName="Microsoft Sans Serif" Enabled="False" ActionType="TextAura">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:TowerPhase}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Tower Phase" Id="b754ee53-5b8b-44a1-98a9-87e84e38485c" RegularExpression="^21\|[^|]*\|[^|]*\|[^|]*\|69F4\|" RefirePeriodExpression="1">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="TowerPhase" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                      <Folder Id="374f99fd-df82-40fc-9701-04c43f2d1a32" Name="Rot / Tether" Enabled="true">
-                        <Folders />
-                        <Triggers>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS role debuffs" Id="837cb200-5382-4c07-bba2-e2d8a7658e17" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69E6\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:recentRake}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" UseTTSTextExpression="Don't get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:recentRake}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                </Condition>
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="DPS tethers" Id="cc888a6f-2f25-45bb-85e7-5a71b0dc80a2" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69ED\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:storedRole}" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" UseTTSTextExpression="Don't get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="${var:storedRole}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="rakeFinished" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="most recently raked role" Id="74761cd7-d073-4d1b-bb29-d05708b99ef6" RegularExpression="^2[12]\|[^\|]*\|[^\|]*\|[^\|]*\|69D8\|[^\|]*\|[^\|]*\|(?&lt;name&gt;[^\|]*)\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="recentRake" VariableExpression="${_ffxivparty[${name}].role}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="stored role" Id="6a9e2de6-865b-416f-bdbe-fd6d2b871ba7" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69EC\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" VariableOp="SetString" VariableName="storedRole" VariableExpression="${var:recentRake}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="Or">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support role debuffs" Id="91a893a3-4100-42b6-890d-d9cc1909c2c6" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69E6\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:recentRake}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" UseTTSTextExpression="Don't get debuff" UseTTSExclusive="False" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:recentRake}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                </Condition>
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="Support tethers" Id="5b36a830-5ff2-4551-950f-7caa4ad29aed" RegularExpression="^2[0]\|[^\|]*\|[^\|]*\|[^\|]*\|69ED\|" RefirePeriodExpression="2">
-                            <Actions>
-                              <Action OrderNumber="1" UseTTSTextExpression="Get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:storedRole}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="2" UseTTSTextExpression="Don't get tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                                <Condition Enabled="true" Grouping="Or">
-                                  <ConditionSingle Enabled="true" ExpressionL="${var:storedRole}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                                </Condition>
-                              </Action>
-                              <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="rakeFinished" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="true" Grouping="And">
-                              <ConditionSingle Enabled="true" ExpressionL="${var:rakeFinished}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
-                              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].role}" ExpressionTypeL="String" ExpressionR="DPS" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
-                            </Condition>
-                            <Conditions />
-                          </Trigger>
-                          <Trigger Enabled="true" Source="FFXIVNetwork" Name="wipe" Id="19c7637d-94ee-4329-bbc3-d1dc49ca1921" RegularExpression="^33\|[^|]*\|[^|]*\|400000(03|10)">
-                            <Actions>
-                              <Action OrderNumber="1" VariableName="rakeFinished" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
-                                <Condition Enabled="false" Grouping="Or" />
-                              </Action>
-                            </Actions>
-                            <Condition Enabled="false" Grouping="Or" />
-                            <Conditions />
-                          </Trigger>
-                        </Triggers>
-                      </Folder>
-                    </Folders>
-                    <Triggers />
-                  </Folder>
-                </Folders>
-                <Triggers />
-              </Folder>
-            </Folders>
+          <Folder Id="e7656aec-3926-4784-abd1-3d7cc292ce08" Name="topaz cluster" Enabled="true">
+            <Folders />
             <Triggers>
-              <Trigger Enabled="true" Name="Hesperos readies Decollation." Id="4714a895-c316-47ab-95e6-78660f908f25" RegularExpression="Hesperos readies Decollation.">
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Start" Id="d29e3a85-5e2e-477a-8a94-12ab58ff0e8f" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7702\|" PeriodRefire="Deny" RefirePeriodExpression="5000">
                 <Actions>
-                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" ListVariableName="thirdSet" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
-                  <Action OrderNumber="2" UseTTSTextExpression="raid damage" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="be605933-62f2-4d48-b3fe-284bb07a87c4" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="3" ListVariableOp="Push" ListVariableName="thirdSet" ListVariableExpression="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="4" ListVariableOp="Push" ListVariableName="thirdSet" ListVariableExpression="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="5" ListVariableOp="Push" ListVariableName="thirdSet" ListVariableExpression="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" ListVariableOp="Push" ListVariableName="thirdSet" ListVariableExpression="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Elegant Evisceration." Id="c438bc49-409e-4290-a621-2c903acdb99a" RegularExpression="Hesperos readies Elegant Evisceration.">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Second Set" Id="5ee38d4c-7bd6-4f6f-a7c5-b923b298de55" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79FF\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="tank buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="3a073778-d7e6-4162-9a59-35eac2248fd4" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="5ee38d4c-7bd6-4f6f-a7c5-b923b298de55" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Bloodrake." Id="13a4ee40-f9bf-4f6f-bb69-9884bc739199" RegularExpression="Hesperos readies Bloodrake.">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="First Set" Id="be605933-62f2-4d48-b3fe-284bb07a87c4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79FF\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|" PeriodRefire="Deny" RefirePeriodExpression="500">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="boss tether" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="5ee38d4c-7bd6-4f6f-a7c5-b923b298de55" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="be605933-62f2-4d48-b3fe-284bb07a87c4" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Pinax." Id="0b9a0860-333b-459b-8018-cf377c6e6836" RegularExpression="Hesperos readies Pinax.">
+              <Trigger Enabled="false" Source="FFXIVNetwork" Sequential="True" Name="Third Set" Id="3a073778-d7e6-4162-9a59-35eac2248fd4" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|79FF\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;x&gt;[^|]*)\|(?&lt;y&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="watch mechanics" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" ListVariableOp="Set" ListVariableName="thirdSet" ListVariableExpression="0" ListVariableIndex="1" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" ListVariableOp="Set" ListVariableName="thirdSet" ListVariableExpression="0" ListVariableIndex="2" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" ListVariableOp="Set" ListVariableName="thirdSet" ListVariableExpression="0" ListVariableIndex="3" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericLess" />
+                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" ListVariableOp="Set" ListVariableName="thirdSet" ListVariableExpression="0" ListVariableIndex="4" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
+                    <Condition Enabled="true" Grouping="And">
+                      <ConditionSingle Enabled="true" ExpressionL="${x}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                      <ConditionSingle Enabled="true" ExpressionL="${y}" ExpressionTypeL="Numeric" ExpressionR="100" ExpressionTypeR="Numeric" ConditionType="NumericGreater" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="1e1052b8-5cd2-4c9f-9549-d3e07397baf3" TriggerForce="regexp" ActionType="Trigger" ExecutionDelayExpression="200">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                  <Action OrderNumber="6" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="3a073778-d7e6-4162-9a59-35eac2248fd4" ActionType="Trigger" ExecutionDelayExpression="500">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Easterly Shift." Id="f95937d8-a6c4-44f5-8a9b-344f07bb88a4" RegularExpression="Hesperos readies Easterly Shift.">
+              <Trigger Enabled="true" Sequential="True" Name="reportSafe" Id="1e1052b8-5cd2-4c9f-9549-d3e07397baf3" RegularExpression="" PeriodRefire="Deny" RefirePeriodExpression="1000">
                 <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:thirdSet.indexof(1)}" ExpressionTypeL="String" ExpressionR="1" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="" UseTTSTextExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:thirdSet.indexof(1)}" ExpressionTypeL="String" ExpressionR="2" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" OBSEndPoint="" UseTTSTextExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:thirdSet.indexof(1)}" ExpressionTypeL="String" ExpressionR="3" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="4" OBSEndPoint="" UseTTSTextExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${lvar:thirdSet.indexof(1)}" ExpressionTypeL="String" ExpressionR="4" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="5" ListVariableName="thirdSet" OBSEndPoint="" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="ListVariable">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Southerly Shift." Id="ae33d711-151a-46ac-a380-fc8c5c889369" RegularExpression="Hesperos readies Southerly Shift.">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Northerly Shift." Id="a27dc1da-4a86-42c4-91d0-632705444f1b" RegularExpression="Hesperos readies Northerly Shift.">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Trigger>
-              <Trigger Enabled="true" Name="Hesperos readies Westerly Shift." Id="920aa419-def9-4306-8eb9-ce182a5d5f96" RegularExpression="Hesperos readies Westerly Shift.">
-                <Actions>
-                  <Action OrderNumber="1" UseTTSTextExpression="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
         </Folders>
-        <Triggers />
+        <Triggers>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Venomous Mass." Id="d584469d-766a-4333-8b5a-ac7b8a832de9" RegularExpression="Proto-Carbuncle readies Venomous Mass.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Tankswap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="The lively bait readies Scatterbait." Id="c1e39795-3e6b-4427-9b11-90a0cf02558a" RegularExpression="The lively bait readies Scatterbait.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Adds" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Double Rush." Id="df3e54cd-00cc-4f54-98b3-d8eb85743737" RegularExpression="Proto-Carbuncle readies Double Rush.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Anti-Knockback" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Toxic Crunch." Id="33f895a3-b8fb-4a17-81b7-39537bb1eee0" RegularExpression="Proto-Carbuncle readies Toxic Crunch.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Tankbuster Poison" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Ruby Glow." Id="c03c9ca4-7a4a-4086-8738-be9c8103c767" RegularExpression="Proto-Carbuncle readies Ruby Glow.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Venom Squall." Id="402db8cc-40d8-4cc3-bd4e-765e5916760f" RegularExpression="Proto-Carbuncle readies Venom Squall.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="spread, stack, lightparties" UseTTSRateExpression="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Venom Surge." Id="9bbf078c-fe78-4465-8974-7cc118475afe" RegularExpression="Proto-Carbuncle readies Venom Surge.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Lightparty, Stack mid, Spread" UseTTSRateExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Claw to Tail." Id="e0daf638-9f74-4414-860f-4e72c8442068" RegularExpression="Proto-Carbuncle readies Claw to Tail.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Back, wait, Front" UseTTSRateExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Venom Pool." Id="6b7a891c-76e7-4ed1-8b11-25648e2be93a" RegularExpression="Proto-Carbuncle readies Venom Pool.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Stay in Stone" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Tail to Claw." Id="a2e7aef8-d747-4c96-9820-699491aeda99" RegularExpression="Proto-Carbuncle readies Tail to Claw.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Front, Back, stay" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Raging Claw." Id="95f04cb9-f995-4ab6-93aa-6a6bdb373fa7" RegularExpression="Proto-Carbuncle readies Raging Claw.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="behind boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Searing Ray." Id="8eb94c0d-b3d0-455f-b54a-aade113238e6" RegularExpression="Proto-Carbuncle readies Searing Ray.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="opposite boss" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Proto-Carbuncle readies Sonic Howl." Id="329ee1ac-1904-4ce3-a96e-b6dce7216043" RegularExpression="Proto-Carbuncle readies Sonic Howl.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Raidwide" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="b664abdc-5730-4491-bd75-51983deb3aa0" Name="6" Enabled="true">
+        <Folders>
+          <Folder Id="3b838ec0-1e0d-4079-8194-9cd1c547cb65" Name="Switcheroo Lockons" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="TTS" Id="4e505547-9273-4929-8481-d776e4de526c" RegularExpression="^27\|[^\|]*\|[^\|]*\|(?&lt;name&gt;[^\|]*)\|[^\|]*\|[^\|]*\|(?&lt;ID&gt;[^\|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Dynamo" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0358" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0360" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0366" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0355" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0359" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0361" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                  <Action OrderNumber="3" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0357" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0356" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                      <ConditionSingle Enabled="true" ExpressionL="hex2dec(${ID})-max(${var:p6offset},0)" ExpressionTypeL="Numeric" ExpressionR="0362" ExpressionTypeR="Numeric" ConditionType="StringEqualNocase" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${name}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Wipe" Id="481d5a86-ab53-4e75-bb05-1a8d9ec94c2f" RegularExpression="^(03|33\|[^|]*\|[^|]*\|400000(?&gt;03|0F)\|)">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="p6offset" VariableExpression="0" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Find offset from dice (disable if no offset and it works)" Id="409e3a42-c3b8-4d36-8470-de45e4935d98" RegularExpression="^27\|[^\|]*\|[^\|]*\|(?&lt;name&gt;[^\|]*)\|[^\|]*\|[^\|]*\|(?&lt;ID&gt;[^\|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" VariableOp="SetNumeric" VariableName="p6offset" VariableExpression="hex2dec(${ID})-318" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${var:p6offset}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+                    </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+        </Folders>
+        <Triggers>
+          <Trigger Enabled="true" Name="Baited AoE" Id="b0e91a38-0ea9-41c6-afe9-3a6797e8a1dd" RegularExpression="Hegemone begins casting Dark Dome.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Bait AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Move" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="3500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Big Spread" Id="cb24a5f3-2aae-4c64-94ee-088b81b5e219" RegularExpression="Hegemone begins casting Dark Sphere.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Big Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Big Spread" Id="b985634d-a37f-4dae-913d-7b7136e514c3" RegularExpression="Hegemone begins casting Dark Ashes.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Crosses LP" Id="4cf8e1dc-5ad7-471c-8c3c-64c9c8b3337e" RegularExpression="Hegemone begins casting Polyominoid Sigma.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Crosses" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Crosses Spread" Id="f91f3319-be94-4163-b005-02f048ae1c0e" RegularExpression="Hegemone begins casting Aetheric Polyominoid.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Crosses" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Debuffs" Id="92fc525d-e5e4-49fd-b89d-158bd31f6e57" RegularExpression="Hegemone begins casting Exchange of Agonies.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Deebuffs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Double Cleave" Id="96057320-cf4b-4fd4-bea4-87aac023b77c" RegularExpression="Hegemone readies Choros Ixou.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Double Cardinal Cleaves" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Move" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="5000">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Exocleaver Dodge CW" Id="b6e3c8c6-c2da-455b-b12e-210c04ae9484" RegularExpression="Hegemone begins casting Exocleaver.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Dodge into aoe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Move" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="3500">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Forward/Backward Cleave" Id="a9f9c5cf-46eb-4e1b-9538-f3ab93de9f70" RegularExpression="Hegemone readies Transmission.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Forward Backward Cleave" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Heavy AoE" Id="af9ea41d-b447-4a3e-9893-7571eff6d10e" RegularExpression="Hegemone begins casting Hemitheos's Dark IV.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Light Party Stack" Id="5ec88251-5fe3-4407-ab12-7740ae0540e7" RegularExpression="Hegemone casts Unholy Darkness.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Light Party Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Limit Cut" Id="a69e95fb-68ed-4882-9d85-b0db19c21d91" RegularExpression="Hegemone readies Pathogenic Cells.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Limit Cut" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Opposite of Debuff" Id="7c303fe7-0ddb-4077-85d9-ed90975ce5ad" RegularExpression="Hegemone readies Ptera Ixou.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Opposite of Debuff" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Shared TB" Id="d113561b-1aa9-4c71-be07-bd0d211ca2a2" RegularExpression="Hegemone readies Chelic Synergy.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Shared Tank Buster" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Spread" Id="7251021e-723d-4415-9ac3-396cb8d46254" RegularExpression="Hegemone begins casting Dark Ashes.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Tank Swap" Id="9cefc584-9e4e-4713-bd0f-edebe9c36c99" RegularExpression="Hegemone readies Synergy.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Tank Swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Timed Debuffs" Id="696656a0-2243-45e2-a81e-4accb407fc40" RegularExpression="Hegemone begins casting Cachexia.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Check Deebuff Timer" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
       </Folder>
     </Folders>
     <Triggers />
