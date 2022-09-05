@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (05.08.2022)" Enabled="true">
     <Folders>
       <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
@@ -420,6 +420,54 @@
           <Trigger Enabled="true" Name="Timed Debuffs" Id="696656a0-2243-45e2-a81e-4accb407fc40" RegularExpression="Hegemone begins casting Cachexia.">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Check Deebuff Timer" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+        </Triggers>
+      </Folder>
+      <Folder Id="f4f582c0-3b7f-4a96-a183-0265b12df2a7" Name="7" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="Agdistis begins casting Dispersed Aero II." Id="0660aa38-e6f8-4e37-84a8-1dd7bf475a5a" RegularExpression="Agdistis begins casting Dispersed Aero II.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="tank buster spread" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Agdistis begins casting Condensed Aero II." Id="5e0bbd18-001d-439a-8814-34f3a6fd443e" RegularExpression="Agdistis begins casting Condensed Aero II.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="tank buster stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Agdistis begins casting Inviolate Bonds." Id="d7042ffe-f156-47a8-ba6d-9b6c068c222e" RegularExpression="Agdistis begins casting Inviolate Bonds.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="" UseTTSTextExpression="deebuffs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="Agdistis begins casting Forbidden Fruit." Id="b7a9a67f-06e5-430c-a9c5-9ea31b3cfb24" RegularExpression="Agdistis begins casting Forbidden Fruit.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Adds" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Agdistis begins casting Spark of Life." Id="1425b4db-82f7-49c2-acdc-1bb75dab5b66" RegularExpression="Agdistis begins casting Spark of Life.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Raidwide Bleeding" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
