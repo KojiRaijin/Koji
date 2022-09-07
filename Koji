@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (05.08.2022)" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (07.09.2022)" Enabled="true">
     <Folders>
       <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
@@ -278,6 +278,67 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder Id="fd6222a0-a5cb-45ca-8549-914721a72df5" Name="Choros Ixou (TESTING)" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Choros Ixou (NS)" Id="97ec4b3a-8754-4d81-84db-d4f14e56c754" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7883\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="North South Safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Choros Ixou (EW)" Id="03890acd-0928-4d63-8be1-884ca3bc523b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7881\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="East West Safe" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="45a7a502-126a-48c9-93b2-e30d040c6e4c" Name="Cachexia 1 (TESTING)" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Green (Wing)" Id="84126f8a-a298-4b49-be5f-2f3774264eed" RegularExpression="^26\|[^|]*\|CF8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Purple (Snake)" Id="7590f464-a97e-4b53-8dde-d08222ee97d3" RegularExpression="^26\|[^|]*\|CF7\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Timer Explosion" Id="8805a32a-60cb-46e6-94d3-574afdbe505f" RegularExpression="^26\|[^|]*\|CF9\|[^|]*\|(?&lt;duration&gt;[\w|]*)[^|]*\|[^|]*\|\|(?&lt;playerID&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="${duration}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+                <Conditions />
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers>
           <Trigger Enabled="true" Name="Baited AoE" Id="b0e91a38-0ea9-41c6-afe9-3a6797e8a1dd" RegularExpression="Hegemone begins casting Dark Dome.">
@@ -437,7 +498,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="Agdistis begins casting Condensed Aero II." Id="5e0bbd18-001d-439a-8814-34f3a6fd443e" RegularExpression="Agdistis begins casting Condensed Aero II.">
             <Actions>
@@ -446,7 +506,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="Agdistis begins casting Inviolate Bonds." Id="d7042ffe-f156-47a8-ba6d-9b6c068c222e" RegularExpression="Agdistis begins casting Inviolate Bonds.">
             <Actions>
@@ -455,7 +514,6 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="Agdistis begins casting Forbidden Fruit." Id="b7a9a67f-06e5-430c-a9c5-9ea31b3cfb24" RegularExpression="Agdistis begins casting Forbidden Fruit.">
             <Actions>
