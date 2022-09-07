@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (07.09.2022) 3" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (07.09.2022) 4" Enabled="true">
     <Folders>
       <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
@@ -278,7 +278,7 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="fd6222a0-a5cb-45ca-8549-914721a72df5" Name="Choros Ixou (TESTING)" Enabled="true">
+          <Folder Id="fd6222a0-a5cb-45ca-8549-914721a72df5" Name="Choros Ixou" Enabled="true">
             <Folders />
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Choros Ixou (NS)" Id="97ec4b3a-8754-4d81-84db-d4f14e56c754" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7883\|">
@@ -288,7 +288,6 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Choros Ixou (EW)" Id="03890acd-0928-4d63-8be1-884ca3bc523b" RegularExpression="^20\|[^|]*\|[^|]*\|[^|]*\|7881\|">
                 <Actions>
@@ -297,13 +296,22 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
           <Folder Id="45a7a502-126a-48c9-93b2-e30d040c6e4c" Name="Cachexia 1 (TESTING)" Enabled="true">
             <Folders />
             <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Timer Explosion" Id="8805a32a-60cb-46e6-94d3-574afdbe505f" RegularExpression="^26\|[^|]*\|CF9\|[^|]*\|(?&lt;duration&gt;[\w|]*)[^|]*\|[^|]*\|\|(?&lt;playerID&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="${duration}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Green (Wing)" Id="84126f8a-a298-4b49-be5f-2f3774264eed" RegularExpression="^26\|[^|]*\|CF8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
@@ -311,7 +319,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id} " ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Trigger>
@@ -322,18 +330,7 @@
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxivplayer}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-                <Conditions />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Timer Explosion" Id="8805a32a-60cb-46e6-94d3-574afdbe505f" RegularExpression="^26\|[^|]*\|CF9\|[^|]*\|(?&lt;duration&gt;[\w|]*)[^|]*\|[^|]*\|\|(?&lt;playerID&gt;[^|]*)\|">
-                <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="${duration}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id} " ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
                 <Conditions />
               </Trigger>
@@ -387,17 +384,6 @@
           <Trigger Enabled="true" Name="Debuffs" Id="92fc525d-e5e4-49fd-b89d-158bd31f6e57" RegularExpression="Hegemone begins casting Exchange of Agonies.">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Deebuffs" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="Double Cleave" Id="96057320-cf4b-4fd4-bea4-87aac023b77c" RegularExpression="Hegemone readies Choros Ixou.">
-            <Actions>
-              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Double Cardinal Cleaves" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-              <Action OrderNumber="2" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Move" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="5000">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
@@ -473,6 +459,14 @@
           <Trigger Enabled="true" Name="Tank Swap" Id="9cefc584-9e4e-4713-bd0f-edebe9c36c99" RegularExpression="Hegemone readies Synergy.">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Tank Swap" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="Timed Debuffs" Id="696656a0-2243-45e2-a81e-4accb407fc40" RegularExpression="Hegemone begins casting Cachexia.">
+            <Actions>
+              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Check Deebuff Timer" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
