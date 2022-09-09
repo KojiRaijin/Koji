@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage (07.09.2022) 4" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage 1.4" Enabled="true">
     <Folders>
       <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
@@ -299,9 +299,29 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="45a7a502-126a-48c9-93b2-e30d040c6e4c" Name="Cachexia 1 (TESTING)" Enabled="true">
+          <Folder Id="45a7a502-126a-48c9-93b2-e30d040c6e4c" Name="Cachexia 1" Enabled="true">
             <Folders />
             <Triggers>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Green (Wing)" Id="84126f8a-a298-4b49-be5f-2f3774264eed" RegularExpression="^26\|[^|]*\|CF8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east, green" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Purple (Snake)" Id="7590f464-a97e-4b53-8dde-d08222ee97d3" RegularExpression="^26\|[^|]*\|CF7\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
+                <Actions>
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start west, purple" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Timer Explosion" Id="8805a32a-60cb-46e6-94d3-574afdbe505f" RegularExpression="^26\|[^|]*\|CF9\|[^|]*\|(?&lt;duration&gt;[\w|]*)[^|]*\|[^|]*\|\|(?&lt;playerID&gt;[^|]*)\|">
                 <Actions>
                   <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="${duration}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS" ExecutionDelayExpression="1000">
@@ -311,28 +331,6 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${playerID}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
                 </Condition>
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Green (Wing)" Id="84126f8a-a298-4b49-be5f-2f3774264eed" RegularExpression="^26\|[^|]*\|CF8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
-                <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id} " ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-                <Conditions />
-              </Trigger>
-              <Trigger Enabled="true" Source="FFXIVNetwork" Name="Purple (Snake)" Id="7590f464-a97e-4b53-8dde-d08222ee97d3" RegularExpression="^26\|[^|]*\|CF7\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
-                <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                    <Condition Enabled="false" Grouping="Or" />
-                  </Action>
-                </Actions>
-                <Condition Enabled="true" Grouping="Or">
-                  <ConditionSingle Enabled="true" ExpressionL="${player}" ExpressionTypeL="String" ExpressionR="${_ffxiventity[${_ffxivplayer}].id} " ExpressionTypeR="String" ConditionType="StringEqualNocase" />
-                </Condition>
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -411,14 +409,6 @@
           <Trigger Enabled="true" Name="Heavy AoE" Id="af9ea41d-b447-4a3e-9893-7571eff6d10e" RegularExpression="Hegemone begins casting Hemitheos's Dark IV.">
             <Actions>
               <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Heavy AoE" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="Light Party Stack" Id="5ec88251-5fe3-4407-ab12-7740ae0540e7" RegularExpression="Hegemone casts Unholy Darkness.">
-            <Actions>
-              <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="Light Party Stack" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
