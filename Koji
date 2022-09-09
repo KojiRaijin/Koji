@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage 1.4" Enabled="true">
+  <ExportedFolder Id="232384a5-87e1-4d0c-bf79-ee079ad5d98c" Name="savage 1.5" Enabled="true">
     <Folders>
       <Folder Id="1a28d9ae-7bfa-4cc8-b283-4e03670dab07" Name="5" Enabled="true">
         <Folders>
@@ -304,7 +304,7 @@
             <Triggers>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Green (Wing)" Id="84126f8a-a298-4b49-be5f-2f3774264eed" RegularExpression="^26\|[^|]*\|CF8\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east, green" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start east" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
@@ -314,7 +314,7 @@
               </Trigger>
               <Trigger Enabled="true" Source="FFXIVNetwork" Name="Purple (Snake)" Id="7590f464-a97e-4b53-8dde-d08222ee97d3" RegularExpression="^26\|[^|]*\|CF7\|[^|]*\|[^|]*\|[^|]*\|[^|]*\|(?&lt;player&gt;[^|]*)\|">
                 <Actions>
-                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start west, purple" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
+                  <Action OrderNumber="1" OBSEndPoint="ws://${_const[OBSWebsocketEndpoint]}:${_const[OBSWebsocketPort]}" OBSPassword="${_const[OBSWebsocketPassword]}" UseTTSTextExpression="start west" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
